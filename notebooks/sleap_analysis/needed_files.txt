@@ -1,0 +1,2 @@
+LFP_SPECTRAL_DF = pd.read_pickle("/blue/npadillacoreano/ryoi360/projects/reward_comp/repos/reward_competition_extention/results/2024_03_22_rce2_spectral_preprocessing/proc/rce_pilot_2_01_lfp_traces_and_frames.pkl")
+SLEAP_DIR = "/blue/npadillacoreano/ryoi360/projects/reward_comp/final_proc/id_corrected"
