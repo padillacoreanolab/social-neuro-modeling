@@ -39,10 +39,21 @@ This notebook calculates distances in animal behavior studies using SLEAP pose e
 
 ## Inputs
 - SLEAP pose data files detailing positions
+    - ID corrected(track label corrected) `h5` files exported from SLEAP 
+        - i.e. `{video_name}.{video_number}.{number_of_subjects}_subj.id_corrected.h5`
+    - Coordinates of the corners of the operant chamber exported from SLEAP. Corners include:
+        - `top left`
+        - `top right`
+        - `bottom left`
+        - `bottom right`
+        - `reward port`
+        - i.e. `20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3.1.corner.h5`
 
 ## Outputs
-- Visualizations of movement velocities and distances.
-- Data files with computed metrics, ready for further analysis or reporting.
+- Pandas Dataframe consisting of processed data from SLEAP pose estimation. Includes:
+    - coordinates of subject/agent
+    - velocity of thorax of subject/agent
+    - distance of thorax to reward port of subject/agent
 
 
 # Notebook 02: SLEAP Processing
@@ -66,7 +77,11 @@ This notebook further processes the output from the previous notebook by removin
 - Output from `./01_rce2_add_sleap_pose_estimation.ipynb` notebook
 
 ## Outputs
-- Processed data frames and visual plots of analyzed data.
+- Further processed data frames and visual plots of analyzed data.
+- Pandas Dataframe consisting of processed data from SLEAP pose estimation. Includes:
+    - coordinates of subject/agent
+    - velocity of thorax of subject/agent
+    - distance of thorax to reward port of subject/agent
 
 # Description of columns in output
 
